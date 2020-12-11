@@ -118,7 +118,7 @@ echo "HELLO WORLD" > test_file.txt
 Now nothing shows up on the screen. List the files and see if you can tell
 why.
 
-> Hint: we learned how to list all the files up above.
+> Hint: we learned how to list all the files up above. "Hello world" has been stored in test_file.txt.
 
 The greater than says, "put that output into the following file instead."
 
@@ -144,7 +144,11 @@ This prints the data directly to stdout and we can see the whole dataset.
 Nice. 
 
 > Let's save the output of the `curl` command to a file called `data.txt`. How
-would we do that?
+would we do that? 
+
+```bash
+curl https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data --output data.txt
+```
 
 Now that we have the data file, let's learn how to manipulate files.
 
@@ -188,10 +192,10 @@ Mostly, we'll care about things like file size (in bytes) and modified date.
 We can get even fancier by adding a second flag
 
 ```bash
-ls -lh
+ls -lh long-listing format (l) + human-readable format (h)
 ```
 
-> What changed?
+> What changed? 30286 -> 30k
 
 If instead copying we just want to change the name of a file, we can do:
 
